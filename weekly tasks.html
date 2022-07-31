@@ -1,0 +1,88 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <link rel="stylesheet" href="week1.css">
+  </head>
+    <body style="background-color:burlywood;">
+        <style>
+           
+           </style>
+        <h1>Coffee Time </h1>
+        <img src="5545476.jpg" alt="A cup of Cofee" class="center" width="400" height="250" >
+        <p><b>Coffee</b>, a brewed beverage made from roasted coffee beans, which are the seeds of berries from specificflowering plants in the Coffea genus,is a popular beverage worldwide. </p>
+        <hr>
+        <h1>First Table</h1>
+        <table>
+            <colgroup>
+            <col span="2" style="background-color:peachpuff";
+            </colgroup>
+            <style>
+            </style>
+            <tr>
+            <th colspan="2">Units</th>
+            <th>Method of teaching</th>
+
+            </tr>
+            <tr>
+            <td>Programming</td>
+            <td>SIT102</td>
+            <td>ONLINE</td>
+            </tr>
+            <tr>
+            <td>Web Apps</td>
+            <td>SIT120</td>
+            <td>Online</td>
+            </tr>
+          </table>
+          <hr>
+            <h2>Types of Coffee</h2>
+<p>Cofee is of many types which are as follows:</p>
+
+<ol>
+  <li>Black Coffee</li>
+  <li>Decaf</li>
+  <li>Espresso</li>
+  <li>Latte</li>
+  <li>Cappucino</li>
+  <li>Machhiato</li>
+  <li>Americano</li>
+  <li>Flat White</li>
+  <li>Irsih Coffee</li> 
+  <li>Cold Brew
+    <ul>
+    <li>Iced Coffee</li>
+    <li>Iced Latte</li>
+    </ul>
+    
+  </li>
+</ol>
+<hr>
+<p><a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwjgkr-AkZT5AhUlKXIKHbMqANsYABAUGgJzZg&ae=2&ohost=www.google.com&cid=CAESbeD2MTWqOXww0dJiw2sdHLLWjge4oNFamG-VEtj3PRHq6SZdILuTV5W_U04n5VMISSJSqRQHDH6DTzzKadRD0dDkdwOcgkzcXfK_wZiFhxY-at7Jr3fB3VVg_jUCnOTlj4KoMhd2QiJj3trrTYk&sig=AOD64_3rhuheWuyGwQmVGaOntxm30jlXFA&q&adurl&ved=2ahUKEwjYu7aAkZT5AhWJRmwGHZAfCI0Q0Qx6BAgDEAE"> ClickHere </a> to Order Coffee Beans Online</p>
+<hr>
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Check Date and Time.</button>
+<p id="demo"></p>
+<hr>
+<p id="todolist">To-do list: </p>
+<div id="app">
+
+    <div 
+       v-for="todo in todos" 
+       :keys="todo.title" 
+       :style="{ textDecoration: todo.checked? 'line-through':'none' }"
+    >
+
+       <input type="checkbox" v-model="todo.checked" />
+       {{ todo.title}}
+
+    </div> 
+
+</div>
+</body>
+
+</html>
+<script src="week1.js"></script>
