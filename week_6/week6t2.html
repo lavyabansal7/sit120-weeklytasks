@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.4/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <div>
+            <ol>
+               <li><input type="checkbox" value="First option" v-model="checkedValues"> 
+                <label for="" >SIT 120 ASSIGNMENT 2</label></li>
+                <li><input type="checkbox" value="Second option" v-model="checkedValues">
+                <label for="" >SIT 102 TASK 7.1P</label></li>
+                <li><input type="checkbox" value="Third option" v-model="checkedValues">
+                <label for="" >MIS 201 ASSIGNMENT 2</label></li>
+                <li><input type="checkbox" value="Fourth option" v-model="checkedValues">
+                <label for="" >SIT 103 TASK 6.1P</label></li>
+                <li><input type="checkbox" value="Fifth option" v-model="checkedValues">
+                <label for="" >SIT 102 TASK 5.MP</label></li>
+            </ol>
+            <br>
+            the checked items are:
+            {{ checkedValues }}
+        </div>
+    </div>
+</body>
+</html>
+<script src = "week6t2.js"></script>
