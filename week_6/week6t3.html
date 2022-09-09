@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.4/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <select name="" id="" v-model="dynamicSelected">
+            <option disabled >Please Select an Option</option>
+            <option v-for="item in dynamicValues" v-bind:value="item">{{ item }}</option>
+        </select>
+        <div>
+            The selected option is: {{ dynamicSelected }}
+        </div>
+    </div>
+</body>
+</html>
+<script src="week6t3.js"></script>
